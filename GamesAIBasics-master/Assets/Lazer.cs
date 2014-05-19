@@ -8,7 +8,7 @@ class Lazer:MonoBehaviour
 {
     public void Update()
     {
-        float speed = 5.0f;
+        float speed = 4.0f;
         float width = 500;
         float height = 500;
 
