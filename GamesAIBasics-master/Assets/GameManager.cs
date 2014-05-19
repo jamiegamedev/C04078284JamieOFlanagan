@@ -5,18 +5,17 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        GameObject leader = GameObject.FindGameObjectWithTag("leader");
-        GameObject teaser = GameObject.FindGameObjectWithTag("teaser");
+        GameObject bot = GameObject.FindGameObjectWithTag("bot");
+        GameObject ammo = GameObject.FindGameObjectWithTag("ammo");
 
-        leader.GetComponent<StateMachine>().SwitchState(new IdleState(leader, teaser));
-        teaser.GetComponent<StateMachine>().SwitchState(new TeaseState(teaser, leader));
+        bot.GetComponent<StateMachine>().SwitchState(new IdleState(bot, ammo));
+        ammo.GetComponent<StateMachine>().SwitchState(new TeaseState(ammo, bot));
 
-        leader.renderer.material.color = Color.red;
-        teaser.renderer.material.color = Color.blue;
+       bot.renderer.material.color = Color.red;
+       ammo.renderer.material.color = Color.blue;
 
         
 	}
-	
 	// Update is called once per frame
 	void Update () {
 	
