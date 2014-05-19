@@ -3,14 +3,15 @@ using System.Collections;
 
 public class createAmmoBots : MonoBehaviour {
 	
-	public GameObject ammo;
+
 	public GameObject bot;
+	public GameObject bot2;
 
 
 	void Start() {
 
 		//spawned one. could not figure out spawning 10 seperate objects.
-		GameObject ammoSpawn = (GameObject)Instantiate(ammo, new Vector3(25,2,0), transform.rotation);
+	
 //		GameObject ammoSpawn1 = (GameObject)Instantiate(ammo, new Vector3(20,2,30), transform.rotation);
 //		GameObject ammoSpawn2 = (GameObject)Instantiate(ammo, new Vector3(22,2,40), transform.rotation);
 //		GameObject ammoSpawn3 = (GameObject)Instantiate(ammo, new Vector3(41,2,32), transform.rotation);
@@ -23,6 +24,8 @@ public class createAmmoBots : MonoBehaviour {
 
 		//Same with the Bots as the ammo crates (one bot for now)
 		GameObject botSpawn5 = (GameObject)Instantiate(bot, new Vector3(13,0,-10), transform.rotation);
+
+		GameObject botSpawn = (GameObject)Instantiate(bot2, new Vector3(25,2,0), transform.rotation);
 //		GameObject botSpawn6 = (GameObject)Instantiate(bot, new Vector3(24,2,7), transform.rotation);
 //		GameObject botSpawn7 = (GameObject)Instantiate(bot, new Vector3(40,2,19), transform.rotation);
 //		GameObject botSpawn8 = (GameObject)Instantiate(bot, new Vector3(20,2,31), transform.rotation);
