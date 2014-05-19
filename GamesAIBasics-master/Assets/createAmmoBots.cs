@@ -9,18 +9,17 @@ public class createAmmoBots : MonoBehaviour {
 
 	void Start() {
 
-		//Ok so I know how to instatiate object on start of scene but I did each individually not randomnly.
-		// I also assigned my own positions as I couldnt remember to do it randomnly either.
-		GameObject ammoSpawn = (GameObject)Instantiate(ammo, new Vector3(10,2,0), transform.rotation);
-		GameObject ammoSpawn1 = (GameObject)Instantiate(ammo, new Vector3(20,2,30), transform.rotation);
-		GameObject ammoSpawn2 = (GameObject)Instantiate(ammo, new Vector3(22,2,40), transform.rotation);
-		GameObject ammoSpawn3 = (GameObject)Instantiate(ammo, new Vector3(41,2,32), transform.rotation);
-		GameObject ammoSpawn4 = (GameObject)Instantiate(ammo, new Vector3(36,2,12), transform.rotation);
-		GameObject ammoSpawn5 = (GameObject)Instantiate(ammo, new Vector3(17,2,12), transform.rotation);
-		GameObject ammoSpawn6 = (GameObject)Instantiate(ammo, new Vector3(35,2,27), transform.rotation);
-		GameObject ammoSpawn7 = (GameObject)Instantiate(ammo, new Vector3(20,2,49), transform.rotation);
-		GameObject ammoSpawn8 = (GameObject)Instantiate(ammo, new Vector3(30,2,46), transform.rotation);
-		GameObject ammoSpawn9 = (GameObject)Instantiate(ammo, new Vector3(13,2,22), transform.rotation);
+		//spawned one. could not figure out spawning 10 seperate objects.
+		GameObject ammoSpawn = (GameObject)Instantiate(ammo, new Vector3(25,2,0), transform.rotation);
+//		GameObject ammoSpawn1 = (GameObject)Instantiate(ammo, new Vector3(20,2,30), transform.rotation);
+//		GameObject ammoSpawn2 = (GameObject)Instantiate(ammo, new Vector3(22,2,40), transform.rotation);
+//		GameObject ammoSpawn3 = (GameObject)Instantiate(ammo, new Vector3(41,2,32), transform.rotation);
+//		GameObject ammoSpawn4 = (GameObject)Instantiate(ammo, new Vector3(36,2,12), transform.rotation);
+//		GameObject ammoSpawn5 = (GameObject)Instantiate(ammo, new Vector3(17,2,12), transform.rotation);
+//		GameObject ammoSpawn6 = (GameObject)Instantiate(ammo, new Vector3(35,2,27), transform.rotation);
+//		GameObject ammoSpawn7 = (GameObject)Instantiate(ammo, new Vector3(20,2,49), transform.rotation);
+//		GameObject ammoSpawn8 = (GameObject)Instantiate(ammo, new Vector3(30,2,46), transform.rotation);
+//		GameObject ammoSpawn9 = (GameObject)Instantiate(ammo, new Vector3(13,2,22), transform.rotation);
 
 		//Same with the Bots as the ammo crates (one bot for now)
 		GameObject botSpawn5 = (GameObject)Instantiate(bot, new Vector3(13,0,-10), transform.rotation);

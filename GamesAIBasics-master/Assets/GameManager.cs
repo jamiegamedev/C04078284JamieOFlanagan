@@ -7,10 +7,7 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		//vhanged your tags to bot and ammo instead of leader and teaser.
         GameObject bot = GameObject.FindGameObjectWithTag("bot");
-		GameObject bot1 = GameObject.FindGameObjectWithTag("bot");
-		GameObject bot2 = GameObject.FindGameObjectWithTag("bot");
-		GameObject bot3 = GameObject.FindGameObjectWithTag("bot");
-		GameObject bot4 = GameObject.FindGameObjectWithTag("bot");
+	
         GameObject ammo = GameObject.FindGameObjectWithTag("ammo");
 
         bot.GetComponent<StateMachine>().SwitchState(new IdleState(bot, ammo));
@@ -18,8 +15,8 @@ public class GameManager : MonoBehaviour {
         ammo.GetComponent<StateMachine>().SwitchState(new TeaseState(ammo, bot));
 
 
-       bot.renderer.material.color = Color.red;
-       ammo.renderer.material.color = Color.blue;
+       bot.renderer.material.color = Color.blue;
+       ammo.renderer.material.color = Color.red;
 
         
 	}
